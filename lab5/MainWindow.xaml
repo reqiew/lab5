@@ -1,0 +1,39 @@
+﻿<Window x:Class="lab5.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab5"
+        mc:Ignorable="d"
+        Title="Подсчет Выражения" Height="270" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="|Ax1 + By1 + C|" Margin="40 60 20 0"/>
+        <TextBlock Grid.Row="1" Text="D=   ________________  =" Margin="13 -14" />
+        <TextBlock Grid.Row="1" Text="√A^2 + B^2" Margin="40 0 0 40"/>
+        <Label Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Content="Введите коардинаты точки P" Margin="60 20" />
+        <TextBox x:Name="x1" Grid.Row="1" Grid.Column="2" Margin="20" />
+        <TextBox x:Name="y1" Grid.Row="1" Grid.Column="3" Margin="20"/>
+        <TextBlock x:Name="Vivod" Grid.RowSpan="2" Grid.Column="1" Margin="0 70 0 70" />
+        <Label Content="A" Grid.Row="2" Margin="0"/>
+        <Label Content="B" Grid.Row="2" Grid.Column="1" Margin="0"/>
+        <Label Content="C" Grid.Row="2" Grid.Column="2" Margin="0"/>
+        <TextBox Grid.Row="2" x:Name="vvod1" Margin="20"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="vvod2" Margin="20" />
+        <TextBox Grid.Row="2" Grid.Column="2" x:Name="vvod3" Margin="20"/>
+        <Button Grid.Column="3" Grid.Row="2" Content="Посчитать" Margin="20" Click="Button_Click"/>
+
+    </Grid>
+</Window>
